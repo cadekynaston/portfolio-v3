@@ -1,0 +1,178 @@
+html, body {
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+
+/* -- BACKGROUND COLORS -- */
+
+.red-bg { background-color:  red; }
+.white-bg { background-color:  red; }
+.dark-bg { background-color:  #343434; }
+.light-bg { background-color:  #fffafa; }
+.yellow-bg { background-color:  #FFE66D; }
+.blue-bg { background-color: #6CA6C1; }
+
+header {
+  padding: 80px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 72px;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+nav {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  padding-top: 30px;
+  z-index: 2;
+}
+
+.nav-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.2);
+  z-index: 1;
+}
+
+.nav-body {
+  height: 500px;
+  background-color: white;
+  z-index: 2;
+  -webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  -ms-transition: height 1s;
+  -o-transition: height 1s;
+  transition: height 1s;
+}
+
+.nav-body.collapsed {
+  -webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  -ms-transition: height 1s;
+  -o-transition: height 1s;
+  transition: height 1s;
+  overflow: hidden;
+  height: 0;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.filler {
+  background-color: #222;
+  height: 2000px;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-button {
+  width: 25px;
+  height: 25px;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+}
+
+.menu-button span {
+  position: relative;
+    display: block;
+    width: 100%;
+    border-bottom: 2px #222 solid;
+    -webkit-transition: width .3s,-webkit-transform .2s;
+    transition: width .3s,-webkit-transform .2s;
+    -o-transition: width .3s,-o-transform .2s;
+    -moz-transition: transform .2s,width .3s,-moz-transform .2s;
+    transition: transform .2s,width .3s;
+    transition: transform .2s,width .3s,-webkit-transform .2s,-moz-transform .2s,-o-transform .2s;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+}
+
+.menu-button span:last-child {
+  width: 14px;
+  margin: 6px 0 0 auto;
+}
+
+.menu-button:hover span:first-child {
+  width: 14px;
+}
+
+.menu-button:hover span:last-child {
+  width: 100%;
+}
+
+.menu-button.active span:first-child {
+  -webkit-transform: translateY(4px) rotate(-45deg);
+  -moz-transform: translateY(4px) rotate(-45deg);
+  -ms-transform: translateY(4px) rotate(-45deg);
+  -o-transform: translateY(4px) rotate(-45deg);
+  transform: translateY(4px) rotate(-45deg);
+
+}
+
+.menu-button.active span:first-child {
+  -webkit-transform: translateY(4px) rotate(-45deg);
+  -moz-transform: translateY(4px) rotate(-45deg);
+  -ms-transform: translateY(4px) rotate(-45deg);
+  -o-transform: translateY(4px) rotate(-45deg);
+  transform: translateY(4px) rotate(-45deg);
+
+}
+
+.menu-button.active span:last-child {
+    -webkit-transform: translateY(-4px) rotate(45deg);
+    -moz-transform: translateY(-4px) rotate(45deg);
+    -ms-transform: translateY(-4px) rotate(45deg);
+    -o-transform: translateY(-4px) rotate(45deg);
+    transform: translateY(-4px) rotate(45deg);
+}
+
+.menu-button.active span {
+  width: 25px!important;
+  -webkit-transition-delay: .1s,0s;
+  -moz-transition-delay: .1s,0s;
+  -o-transition-delay: .1s,0s;
+  transition-delay: .1s,0s;
+}
+
+.hidden {
+  display: none;
+}
