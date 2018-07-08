@@ -7,7 +7,7 @@ html, body {
 /* -- BACKGROUND COLORS -- */
 
 .red-bg { background-color:  red; }
-.white-bg { background-color:  red; }
+.white-bg { background-color:  white; }
 .dark-bg { background-color:  #343434; }
 .light-bg { background-color:  #fffafa; }
 .yellow-bg { background-color:  #FFE66D; }
@@ -44,7 +44,7 @@ h3 {
 
 nav {
   position: fixed;
-  background-color: white;
+  background-color: transparent;
   top: 0;
   width: 100%;
   padding-top: 30px;
@@ -60,24 +60,65 @@ nav {
 }
 
 .nav-body {
-  height: 500px;
+  height: 490px;
+  margin-top: -90px;
+  padding-top: 90px;
   background-color: white;
   z-index: 2;
-  -webkit-transition: height 1s;
-  -moz-transition: height 1s;
-  -ms-transition: height 1s;
-  -o-transition: height 1s;
-  transition: height 1s;
+  -webkit-transition: height .3s;
+  -moz-transition: height .3s;
+  -ms-transition: height .3s;
+  -o-transition: height .3s;
+  transition: height .3s;
+  animation-timing-function: ease;
+
 }
 
 .nav-body.collapsed {
-  -webkit-transition: height 1s;
-  -moz-transition: height 1s;
-  -ms-transition: height 1s;
-  -o-transition: height 1s;
-  transition: height 1s;
+  -webkit-transition: height .3s;
+  -moz-transition: height .3s;
+  -ms-transition: height .3s;
+  -o-transition: height .3s;
+  transition: height .3s;
+  animation-timing-function: ease;
   overflow: hidden;
+  padding-top: 0;
   height: 0;
+}
+
+.nav-top-bar {
+  align-items: center;
+}
+
+.nav-top-bar img {
+  height: 60px;
+  width: 60px;
+
+}
+
+.nav-items {
+
+  font-size: 40px;
+  margin-right: 50px;
+}
+
+.nav-items a {
+  opacity: 0;
+  font-weight: 300;
+  margin-top: 20px;
+  color: #222;
+  text-decoration: none;
+}
+
+
+.flex-end-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+header {
+  padding-top: 300px;
 }
 
 header .container {
@@ -105,7 +146,7 @@ header .container {
 }
 
 .menu-button:hover {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .menu-button span {
@@ -173,6 +214,10 @@ header .container {
   transition-delay: .1s,0s;
 }
 
+
+
 .hidden {
   display: none;
 }
+
+
