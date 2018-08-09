@@ -13,9 +13,6 @@ html, body {
 .yellow-bg { background-color:  #FFE66D; }
 .blue-bg { background-color: #6CA6C1; }
 
-header {
-  padding: 80px;
-}
 
 h1,
 h2,
@@ -44,7 +41,7 @@ h3 {
 
 nav {
   position: fixed;
-  background-color: transparent;
+  background-color: white;
   top: 0;
   width: 100%;
   padding-top: 30px;
@@ -118,12 +115,21 @@ nav {
 }
 
 header {
-  padding-top: 300px;
+  padding-top: 250px;
+  padding-bottom: 150px;
 }
 
 header .container {
   display: flex;
   flex-direction: row;
+}
+
+.intro {
+  font-size: 36px;
+}
+
+.width-80 {
+  width: 80%;
 }
 
 .width-50 {
@@ -214,10 +220,36 @@ header .container {
   transition-delay: .1s,0s;
 }
 
-
-
 .hidden {
   display: none;
 }
 
+.work-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
+.work-card {
+
+  width: 45%;
+
+}
+
+.work-card:hover {
+  cursor: pointer;
+}
+
+.work-card-title {
+  font-size: 30px;
+}
+
+.work-card img {
+  width: 100%;
+  box-shadow: 0 0 20px #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
