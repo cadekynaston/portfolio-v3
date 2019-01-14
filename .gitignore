@@ -1,0 +1,12 @@
+.DS_Store
+Desktop.ini
+thumbs.db
+.idea
+.sass-cache
+.env
+/vendor
+node_modules
+yarn.lock
+package-lock.json
+*.log
+.#*
