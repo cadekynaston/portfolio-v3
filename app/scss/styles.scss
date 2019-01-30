@@ -3,6 +3,7 @@
 $white: #FFFFFF;
 $dark: #343434;
 $dark-blue: #192B3E;
+$blue-contrast: #243f5b;
 $light: #FBFAF9;
 $light-blue: #4B9FED;
 $purple: #6074B5;
@@ -159,7 +160,6 @@ h3 {
 
 p {
   font-size: 18px;
-  color: $gray;
   margin-bottom: 10px;
 }
 
@@ -216,11 +216,11 @@ header {
 
 .about {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 80px;
 }
 
 .projects {
-  padding-top: 10px;
+  padding-top: 80px;
   padding-bottom: 10px;
 }
 
@@ -228,7 +228,6 @@ header {
   padding-top: 100px;
   display: flex;
   flex-direction: column;
-
 }
 
 .main-project {
@@ -242,17 +241,17 @@ header {
   }
 
   .details {
+    box-shadow: 10px 20px 40px 0 rgba(36,36,36,.2);
     position: relative;
     z-index: 10;
     max-width: 450px;
-    background-color: $light;
+    background-color: $blue-contrast;
     padding: 30px;
+    color: $gray;
 
     .tech {
-
       display: flex;
       flex-direction: row;
-
 
       p {
         font-size: 14px;
@@ -264,8 +263,7 @@ header {
 
   .title {
     font-size: 30px;
-    color: $blue;
-    BOR
+    color: $light;
 
     img {
       height: 20px;
@@ -298,6 +296,43 @@ header {
       left: 350px;
       width: 600px;
       margin: auto;
+    }
+  }
+}
+
+.more-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px 15px;
+
+  .project {
+    padding: 25px;
+    box-shadow: 10px 20px 40px 0 rgba(36,36,36,.2);
+    background-color: $blue-contrast;
+    height: 100%;
+    width: 100%;
+    color: $gray;
+
+    .top-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .project-icon {
+      height: 55px;
+    }
+
+    .icon-links {
+      img {
+        height: 30px;
+        margin-left: 5px;
+      }
+    }
+
+    .project-title {
+      color: $light;
     }
   }
 }
